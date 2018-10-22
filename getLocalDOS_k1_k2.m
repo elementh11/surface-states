@@ -1,7 +1,7 @@
-% ---- k1-k2 resolved bulk and surface (top and bottom) DOS
+% ---- bulk and surface DOS calculation
 clearvars;
 
-ns = 10;%<---- max number of layers in the slab
+ns = 7;%<---- max number of layers in the slab
 ne = 1;
 ef = 12.8320;
 %elist = ef + linspace(-1, 1, ne);
@@ -55,16 +55,16 @@ for kc = 1:nk
         hamWk = hamWk + hcontr;
         
         if delta(3) >= 0
-            for i=1:ns
-                for j=1:ns
+            for i=(ns+1)/2:ns
+                for j=(ns+1)/2:ns
                     if (i-j) == delta(3)
                         hblocktop{i,j} = hblocktop{i,j} + hcontr;
                     end
                 end
             end
         else
-            for i=1:ns
-                for j=1:ns
+            for i=1:(ns+1)/2
+                for j=1:(ns+1)/2
                     if (i-j) == delta(3)
                         hblockbottom{i,j} = hblockbottom{i,j} + hcontr;
                     end
