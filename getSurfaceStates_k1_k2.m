@@ -58,9 +58,6 @@ for kc = 1:nk
         end
     end
     
-    H00 = .5 * (H00 + H00');
-    H01 = .5 * (H01 + H01');
-    
     %%%%%%%% call iterative method to get G
     
     ec = 0;
