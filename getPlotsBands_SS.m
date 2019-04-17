@@ -3,7 +3,7 @@
 
 ef = 12.8320;
 load bands_W90.mat;
-sz=1;
+sz=3;
 figure;
 
 b_W90 = abs(dataw.eks) - ef;
@@ -20,7 +20,7 @@ hold all; plot([1 xlength],[0 0],':k');
 b_W90 = abs(dataw.ek) - ef;
 for jj = 1 : size(b_W90,2)
     band = b_W90(:,jj);
-    %hhld all; plot(band,'-b','LineWidth',.5);
+    %hold all; plot(band,'-b','LineWidth',.5);
     hold all; scatter(1:xlength,band,sz,'filled','b');
 end
 

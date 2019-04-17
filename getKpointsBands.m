@@ -2,7 +2,7 @@
 %---- generates k-points along symmetry lines for Wannier bandstructure
 %---- calculation
 
-nk = 50;
+nk = 200;
 
 % GY = [linspace(0.0, 0.0, nk);
 %       linspace(0.0, 0.5, nk);
