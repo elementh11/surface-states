@@ -2,6 +2,7 @@
 %
 % ------  initialize A for each frequency
 %         skip calculation for \Delta E < e_thresh
+%         calculates both bulk and surface states contributions
 %
 clearvars;
 ef = 12.8620;
