@@ -1,5 +1,5 @@
 function [G, GS, GSD] = getIterativeGreenFunction(H00, H01, omega)
-%UNTITLED returns G using iterative method from
+% Function returns G using iterative method from
 % J. Phys. F: Met. Phys 15(1985)851-858 M. P. Lopez Sancho, J. M. Lopez Sancho and J. Rubio
 %     ------------------------------------------------------------
 niter = 100;
